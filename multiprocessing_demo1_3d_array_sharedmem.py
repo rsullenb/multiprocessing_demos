@@ -30,7 +30,7 @@ def mc_img(y, x):
     s = 0
     trials = 50
     for i in range(trials):
-        j = np.random.rand(30).sum()
+        j = np.random.rand(arr.shape[2]).sum()
         if j <= arr[y, x, :].sum():
             s += 1
     return s
